@@ -1,0 +1,199 @@
+.header
+    color:#fff
+    position:relative
+    overflow:hidden
+    .content-wrapper
+        color:#fff
+        padding:24px 12px 18px 24px
+        background: rgba(7,17,27,0.5)
+        position:relative
+        font-size:0
+        .avatar
+            display: inline-block
+            vertical-align:top
+            img
+                border-radius:2px
+        .content
+            display:inline-block
+            font-size:14px
+            margin-left:16px
+            .title
+                margin:2px 0 8px 0
+                .brand
+                    display:inline-block
+                    vertical-align:top
+                    width:33px
+                    height:18px
+                    bg-image('brand')
+                    background-size:33px 18px
+                    background-repeat:no-repeat
+                .name
+                    margin-left:6px
+                    font-size:16px
+                    line-height:16px
+                    font-weight:bold 
+            .description
+                margin-bottom:10px
+                line-height:12px
+                font-size:12px
+            .supports
+                .icon
+                    vertical-align:top
+                    display:inline-block
+                    width:18px
+                    height:18px
+                    margin-right:4px
+                    background-size:18px 18px
+                    background-repeat:no-repeat
+                    &.decrease
+                        bg-image('minus')
+                    &.discount
+                        bg-image('sell')
+                    &.guarantee
+                        bg-image('bao')
+                    &.invoice
+                        bg-image('piao')
+                    &.ecipical
+                        bg-image('ecipical')
+                .text
+                    font-size:14px
+                    line-height:18px
+        .support-count
+            position:absolute
+            right:12px
+            bottom:18px
+            padding:0 8px
+            height:24px
+            line-height:24px
+            border-radius:14px
+            background:rgba(0,0,0,0.2)
+            text-align:center
+            .count
+                color:#fff
+                font-size:10px
+            .right-btn
+                color:#fff
+                font-size:10px
+                display:inline-block
+                margin-left:8px
+    .notice-wrapper
+        position:relative
+        height:28px
+        line-height:28px
+        padding:0 22px 0 12px
+        white-space:nowrap
+        overflow:hidden
+        text-overflow:ellipsis
+        background:rgba(7,17,27,0.2)
+        .notice-text
+            font-size:10px
+            margin:0 4px
+            vertical-align:top
+            color:#fff
+        .notice-title
+            display:inline-block
+            vertical-align:top
+            margin-top:8px
+            width:22px
+            height:12px
+            bg-image('notice')
+            background-size:22px 12px
+        .right-btn1
+            position:absolute
+            font-size:10px
+            right:12px
+            top:0
+            color:#fff
+    .background
+        position:absolute
+        top:0
+        left:0
+        width:100%
+        height:100%
+        z-index:-1
+        filter:blur(10px)
+    .detail
+        position:fixed
+        top:0
+        left:0
+        z-index:100
+        width:100%
+        height:100%
+        overflow:auto
+        transition:all 0.5s
+        background:rgba(7,17,27,0.8)
+        &.fade-enter-active,&.fade-leave-active
+            opacity:0
+            background:rgba(7,17,27,0)         
+        .detail-wrapper
+            min-height:100%
+            .detail-main
+                margin-top:64px
+                padding-bottom:64px
+                .brand-name
+                    text-align:center
+                    height:16px
+                    line-height:16px
+                    font-size:16px
+                    font-weight:bold
+                .tittle
+                    display:flex
+                    width:80%
+                    margin:28px auto 24px auto
+                    .line
+                        flex:1
+                        position:relative
+                        top:-6px
+                        border-bottom:1px solid rgba(255,255,255,0.2)
+                    .text
+                        padding:0 12px
+                        font-weight:bold
+                        font-size:14px
+                .notice
+                    width:80%
+                    margin:0 auto
+                    .content
+                        font-size:12px
+                        padding:0 12px
+                        line-height:24px
+                .supports
+                    width:80%
+                    margin:0 auto
+                    .support-item
+                        padding:0 12px
+                        margin-bottom:12px
+                        font-size:0
+                        .icon
+                            vertical-align:top
+                            display:inline-block
+                            width:16px
+                            height:16px
+                            margin-right:6px
+                            background-size:16px 16px
+                            background-repeat:no-repeat
+                            &.decrease
+                                bg-image('minus')
+                            &.discount
+                                bg-image('sell')
+                            &.guarantee
+                                bg-image('bao')
+                            &.invoice
+                                bg-image('piao')
+                            &.ecipical
+                                bg-image('ecipical')
+                        .text
+                            font-size:12px
+                            line-height:16px
+        .detail-close
+            position:relative
+            width:32px
+            height:32px
+            font-size:32px
+            margin:-64px auto 0 auto
+            clear:both
+            .close-btn
+                display:inline-block
+                color:#fff
+                font-size:32px
+                text-align:center
+                width:32px
